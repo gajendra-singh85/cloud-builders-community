@@ -10,7 +10,7 @@ steps:
 # Configure JFrog CLI to point to JFrog Artifactory
 - name: 'jfrog-docker-reg2.bintray.io/google-cloud-builder/java/jfrog:0.1'
   entrypoint: 'bash'
-  args: ['-c', 'jfrog rt c rt-mvn-repo --url=https://[ARTIFACTORY-URL]/artifactory --user=[ARTIFACTORY-USER] --password=$$APIKEY']
+  args: ['-c', 'jfrog rt c rt-mvn-repo --url=https://acreagetech.online/artifactory --user=admin --password=$$APIKEY']
   secretEnv: ['APIKEY']
   dir: 'maven-example'
 
